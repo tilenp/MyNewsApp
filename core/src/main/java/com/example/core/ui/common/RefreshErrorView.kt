@@ -16,7 +16,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.core.ui.theme.Dimens
 import com.example.core.ui.theme.MyNewsAppTheme
 import com.example.core.ui.theme.Sizes
-import com.example.core.R as CoreR
+import com.example.core.R as coreR
 
 @Composable
 fun RefreshErrorView(
@@ -30,7 +30,7 @@ fun RefreshErrorView(
         Column {
             Image(
                 modifier = Modifier.size(Sizes.mediumImage),
-                painter = painterResource(id = CoreR.drawable.nothing_to_show),
+                painter = painterResource(id = coreR.drawable.nothing_to_show),
                 contentDescription = null
             )
             Text(
@@ -44,7 +44,7 @@ fun RefreshErrorView(
             Text(
                 modifier = Modifier.fillMaxWidth()
                     .padding(Dimens.spacing8),
-                text = stringResource(CoreR.string.Swipe_to_retry),
+                text = stringResource(coreR.string.Swipe_to_retry),
                 style = MaterialTheme.typography.subtitle1,
                 textAlign = TextAlign.Center
             )
