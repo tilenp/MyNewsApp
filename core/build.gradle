@@ -41,17 +41,15 @@ android {
 dependencies {
 
     /** Accompanist **/
-    implementation "com.google.accompanist:accompanist-swiperefresh:0.27.0"
+    implementation "com.google.accompanist:accompanist-swiperefresh:$accompanist_swipe_refresh_version"
 
     /** Compose **/
     implementation "androidx.compose.material:material:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
-    implementation "androidx.paging:paging-compose:1.0.0-alpha17"
-
-    /** ConstraintLayout **/
-    implementation "androidx.constraintlayout:constraintlayout-compose:1.0.1"
+    implementation "androidx.paging:paging-compose:$compose_paging_version"
+    implementation "androidx.constraintlayout:constraintlayout-compose:$compose_constraint_layout_version"
 
     /** Hilt **/
-    implementation "com.google.dagger:hilt-android:2.44"
-    kapt "com.google.dagger:hilt-compiler:2.44"
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-compiler:$hilt_version"
 }
