@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <string name="Swipe_to_retry">Swipe to retry</string>
+    <string name="Click_to_retry">Click to retry</string>
+    <string name="Search_articles">Search articles</string>
+    <string name="published_at_format">%s at %s</string>
+
+    <!-- errors -->
+    <string name="Network_not_available">Network not available</string>
+    <string name="Server_error">Service unavailable, please try again later</string>
+    <string name="Unknown_error">Unknown error</string>
+</resources>
