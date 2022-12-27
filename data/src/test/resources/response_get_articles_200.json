@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "totalResults": 18021,
+  "articles": [
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Jon Fingas",
+      "title": "Tesla recalls over 80,000 cars in China due to software and seat belt flaws",
+      "description": "Tesla is having a particularly lousy week. The Wall Street Journalreports the EV manufacturer has recalled a total of 80,561 cars in China over software and seat belt problems. Battery management glitches affecting 67,698 Model S and Model X vehicles could le…",
+      "url": "https://www.engadget.com/tesla-recall-china-model-s-x-3-153644099.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2022-09/6ea2f270-3af3-11ed-bcdf-db0ea3a4bd82",
+      "publishedAt": "2022-11-25T15:36:44Z",
+      "content": "Tesla is having a particularly lousy week. The Wall Street Journalreports the EV manufacturer has recalled a total of 80,561 cars in China over software and seat belt problems. Battery management gli… [+1394 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Igor Bonifacic",
+      "title": "Tesla is reportedly redesigning the Model 3 to cut production costs",
+      "description": "Tesla is working on a redesign of the Model 3 codenamed “Highland,” according to Reuters\r\n. The company’s goal is to reportedly reduce the complexity and number of components required to produce the sedan. The redesign could include changes to the car’s exter…",
+      "url": "https://www.engadget.com/tesla-highland-model-3-redesign-report-172945432.html",
+      "urlToImage": "https://o.aolcdn.com/images/dims?resize=2000%2C2000%2Cshrink&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F90658bf835cbd1f2b4265d9ee4d57174%2F206166685%2F0228_tesla_model3-9310.jpg&client=a1acac3e1b3290917d92&signature=9a22db7997be8a49729464a030909e76ba380db8",
+      "publishedAt": "2022-11-28T17:29:45Z",
+      "content": "Tesla is working on a redesign of the Model 3 codenamed Highland, according to Reuters\r\n. The companys goal is to reportedly reduce the complexity and number of components required to produce the sed… [+1338 chars]"
+    }
+  ]
+}
