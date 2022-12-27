@@ -3,41 +3,32 @@ package com.example.mynewsapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.mynewsapp.ui.theme.MyNewsAppTheme
+import androidx.compose.animation.ExperimentalAnimationApi
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
+import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
+import com.example.core.ui.theme.MyNewsAppTheme
+import com.example.news.navigation.NewsGraph
+import com.google.accompanist.navigation.animation.rememberAnimatedNavController
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 
+@ExperimentalAnimationApi
+@ExperimentalMaterial3WindowSizeClassApi
+@ExperimentalCoroutinesApi
+@ExperimentalLifecycleComposeApi
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MyNewsAppTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Android")
-                }
+                val widthSizeClass = calculateWindowSizeClass(this).widthSizeClass
+                NewsGraph(
+                    widthSizeClass = widthSizeClass,
+                    navController = rememberAnimatedNavController(),
+                )
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    MyNewsAppTheme {
-        Greeting("Android")
     }
 }
