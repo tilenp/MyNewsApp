@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_not_available">title not available</string>
+    <string name="article_source_format">By %s</string>
+    <string name="author_not_available">author not available</string>
+    <string name="publish_date_not_available">publish date not available</string>
+    <string name="description_not_available">description not available</string>
+</resources>
