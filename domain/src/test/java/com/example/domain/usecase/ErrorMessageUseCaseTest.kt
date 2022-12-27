@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test
 import retrofit2.HttpException
 import retrofit2.Response
 import java.io.IOException
-import com.example.core.R as CoreR
+import com.example.core.R as coreR
 
 class ErrorMessageUseCaseTest {
 
@@ -34,8 +34,8 @@ class ErrorMessageUseCaseTest {
 
     @BeforeEach
     fun setUp() {
-        every { context.getString(CoreR.string.Network_not_available) } returns ioExceptionMessage
-        every { context.getString(CoreR.string.Unknown_error) } returns throwableMessage
+        every { context.getString(coreR.string.Network_not_available) } returns ioExceptionMessage
+        every { context.getString(coreR.string.Unknown_error) } returns throwableMessage
         every { gson.fromJson(any<String>(), ArticleErrorBody::class.java) } returns articleErrorBody
         every { exception.response() } returns response
         every { response.errorBody() } returns errorBody
@@ -52,7 +52,7 @@ class ErrorMessageUseCaseTest {
         val exception = IOException()
         val result = useCase.invoke(exception)
 
-        verify(exactly = 1) { context.getString(CoreR.string.Network_not_available) }
+        verify(exactly = 1) { context.getString(coreR.string.Network_not_available) }
         assertEquals(ioExceptionMessage, result)
     }
 
